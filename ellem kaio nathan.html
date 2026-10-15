@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Kaio, Ellem & Nathan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Bar / Nav -->
+    <header class="header">
+        <div class="logo">KEN<span>.dev</span></div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#team">Equipe</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <span class="badge">Coletivo de Soluções Digitais</span>
+            <h1>Inovação, Código & Design de Alta Performance</h1>
+            <p>Somos Kaio, Ellem e Nathan — unimos forças para criar plataformas web modernas, escaláveis e intuitivas.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Ver Projetos <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>O Que Fazemos</h2>
+                <p>Nossa atuação cobre todas as etapas de criação de um produto digital moderno.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-desktop"></i></div>
+                    <h3>Frontend Moderno</h3>
+                    <p>Interfaces rápidas, fluidas, responsivas e construídas com boas práticas de UI/UX.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-server"></i></div>
+                    <h3>Backend Scalable</h3>
+                    <p>Arquitetura de dados eficiente, APIs seguras e microsserviços de alto desempenho.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-palette"></i></div>
+                    <h3>UI/UX & Branding</h3>
+                    <p>Prototipagem de alta fidelidade e design systems completos focados no usuário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conheça a Equipe</h2>
+                <p>Integrantes com competências complementares prontos para entregar o seu projeto.</p>
+            </div>
+            <div class="team-grid">
+
+                <!-- Kaio -->
+                <div class="member-card">
+                    <div class="avatar kaio-avatar">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Kaio</h3>
+                    <span class="role">Frontend Engineer & UI/UX</span>
+                    <p>Especialista em criar interfaces envolventes, animações fluidas e ecossistemas web com React, Tailwind e TypeScript.</p>
+                    <div class="member-skills">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ellem -->
+                <div class="member-card">
+                    <div class="avatar ellem-avatar">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Ellem</h3>
+                    <span class="role">Product Designer & Fullstack</span>
+                    <p>Combina design elegante no Figma com arquitetura limpa em sistemas web para garantir experiências completas.</p>
+                    <div class="member-skills">
+                        <span>Figma</span>
+                        <span>Vue.js</span>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Nathan -->
+                <div class="member-card">
+                    <div class="avatar nathan-avatar">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Nathan</h3>
+                    <span class="role">Backend Architect & DevOps</span>
+                    <p>Focado em infraestrutura de nuvem, banco de dados, APIs de alta velocidade, conteinerização e automação CI/CD.</p>
+                    <div class="member-skills">
+                        <span>Python</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Projetos</h2>
+                <p>Veja algumas das aplicações e soluções interativas que construímos juntas.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-banner p-banner-1"></div>
+                    <div class="project-body">
+                        <span class="category-tag">Fullstack</span>
+                        <h3>Dashboard Analytics SaaS</h3>
+                        <p>Plataforma para monitoramento de métricas financeiras e vendas em tempo real.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="frontend">
+                    <div class="project-banner p-banner-2"></div>
+                    <div class="project-body">
+                        <span class="category-tag">Frontend</span>
+                        <h3>Crypto Web Tracker</h3>
+                        <p>Interface responsiva para cotações de criptomoedas via integração com WebSockets.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="backend">
+                    <div class="project-banner p-banner-3"></div>
+                    <div class="project-body">
+                        <span class="category-tag">Backend</span>
+                        <h3>API RESTful de Autenticação</h3>
+                        <p>Serviço seguro para gestão de usuários, permissões e tokens de segurança OAuth2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Mande uma Mensagem</h2>
+                    <p>Ficaremos felizes em ouvir sobre a sua ideia ou projeto. Entre em contato conosco!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@ken.dev</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Atendimento Remoto / Brasil</span>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Seu Nome</label>
+                        <input type="text" id="name" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Seu E-mail</label>
+                        <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Sua Mensagem</label>
+                        <textarea id="message" rows="4" required placeholder="Escreva a sua mensagem..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    <div id="status-msg" class="status-msg"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Kaio, Ellem & Nathan. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
